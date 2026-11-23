@@ -1,0 +1,19 @@
+program
+{
+    -- Deklaracije promenljivih --
+    broj : int;
+    rezultat : float;
+    znak : char;
+
+    -- Deklaracije funkcija --
+    identitet(x : int) => x;
+    podrazumevana(a : int, b : float = 2.5) => a;
+    vratiZnak(c : char) => c;
+
+    -- Dodela vrednosti i pozivi funkcija --
+    broj = 0x2A;
+    rezultat = podrazumevana(broj, 3.14E+1);
+    znak = vratiZnak('K');
+    broj = identitet(075)
+}
+end

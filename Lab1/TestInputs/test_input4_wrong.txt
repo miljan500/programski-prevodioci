@@ -1,0 +1,6 @@
+program
+{
+    broj : int;
+    broj = 12@34;
+}
+end

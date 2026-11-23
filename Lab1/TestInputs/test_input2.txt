@@ -1,0 +1,18 @@
+program
+{
+    -- Testiranje razlicitih formata konstanti --
+    decimalni : int;
+    oktalni : int;
+    heksadecimalni : int;
+    realni1 : float;
+    realni2 : float;
+    slovo : char;
+
+    decimalni = 125;
+    oktalni = 075;
+    heksadecimalni = 0x7D;
+    realni1 = 12.50E-2;
+    realni2 = .75E+3;
+    slovo = 'Z'
+}
+end

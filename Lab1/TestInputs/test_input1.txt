@@ -1,0 +1,10 @@
+program
+{
+    -- Ovo je komentar --
+    a : int;
+    b : char;
+
+    a = 356;
+    b = 'c'
+}
+end
