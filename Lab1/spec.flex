@@ -62,10 +62,10 @@ exponent = E[+-]?{digits}
 
 // float
 {digits}\.{digits}?{exponent}? { return new Yytoken( sym.CONST, yytext(), yyline, yycolumn ); }
-\.{digits}?{exponent}? { return new Yytoken( sym.CONST, yytext(), yyline, yycolumn ); }
+\.{digits}{exponent}? { return new Yytoken( sym.CONST, yytext(), yyline, yycolumn ); }
 
 // char
-'[^]' { return new Yytoken( sym.CONST, yytext(), yyline, yycolumn ); }
+\'[^]\' { return new Yytoken( sym.CONST, yytext(), yyline, yycolumn ); }
 
 // error handling
 . { if (yytext() != null && yytext().length() > 0) System.out.println( "ERROR: " + yytext() ); }
